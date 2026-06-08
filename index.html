@@ -1,0 +1,274 @@
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gazze Yardım Derneği</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.7;
+}
+
+header{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url('tihv-gazze-filistin-cagri.jpg') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#22c55e;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:1.5rem;
+    margin-bottom:20px;
+    color:#f8fafc;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#16a34a;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#22c55e;
+    font-size:2.2rem;
+}
+
+.info{
+    background:#111827;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.gallery{
+    background:#0b1220;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.cta{
+    text-align:center;
+    background:linear-gradient(135deg,#14532d,#166534);
+}
+
+.cta h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:900px;
+    margin:auto;
+    margin-bottom:25px;
+}
+
+.contact{
+    text-align:center;
+    background:#111827;
+}
+
+.instagram-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:#E1306C;
+    color:white;
+    text-decoration:none;
+    padding:16px 28px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.instagram-btn:hover{
+    opacity:.9;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+.highlight{
+    color:#22c55e;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Gazze Yardım Derneği</h1>
+        <h2>Her Destek 1 Can Demek</h2>
+
+        <p>
+            Gazze'de yaşanan insani kriz milyonlarca insanı etkilemektedir.
+            Yerinden edilen aileler, çocuklar ve siviller temel ihtiyaçlara
+            ulaşmakta büyük zorluk yaşamaktadır.
+        </p>
+
+        <a href="#destek" class="btn">Destek Ol</a>
+    </div>
+</header>
+
+<section class="info">
+    <h2 class="section-title">Gazze'deki İnsani Durum</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>İnsani Kriz</h3>
+            <p>
+                Uluslararası kuruluşlar, Gazze'de geniş çaplı yıkım,
+                yerinden edilme ve ciddi insani ihtiyaçlar bulunduğunu
+                rapor etmektedir.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Can Kayıpları</h3>
+            <p>
+                Birleşmiş Milletler ve çeşitli kaynaklar,
+                çatışmaların başlamasından bu yana on binlerce kişinin
+                hayatını kaybettiğini bildirmektedir.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Çocuklar ve Aileler</h3>
+            <p>
+                En büyük yükü çocuklar ve aileler taşımaktadır.
+                Temiz su, sağlık hizmeti ve güvenli barınma ihtiyacı
+                kritik seviyededir.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2 class="section-title">Gazze İçin Dayanışma</h2>
+
+    <div class="gallery-grid">
+        <img src="tihv-gazze-filistin-cagri.jpg" alt="Gazze Yardım">
+
+        <img src="images.jpg" alt="Filistin Yardım">
+
+        <img src="211020251-696x464.jpg" alt="Gazze Dayanışma">
+    </div>
+</section>
+
+<section id="destek" class="cta">
+    <h2>Bir İnsanın Hayatına Dokunabilirsiniz</h2>
+
+    <p>
+        Yapacağınız her destek; gıda, temiz su, sağlık hizmetleri ve
+        acil insani yardım çalışmalarına katkı sağlayabilir.
+        Küçük ya da büyük fark etmeksizin her yardım değerlidir.
+    </p>
+
+    <p class="highlight">
+        Her Destek 1 Can Demek
+    </p>
+
+    <a href="#" class="btn">Bağış Yap</a>
+</section>
+
+<section class="contact">
+    <h2 class="section-title">İletişim</h2>
+
+    <a class="instagram-btn"
+       href="https://instagram.com/gazzeyardim_dernegi"
+       target="_blank">
+
+        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5z"/>
+            <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5z"/>
+            <circle cx="17.5" cy="6.5" r="1"/>
+        </svg>
+
+        İletişim - @gazzeyardim_dernegi
+    </a>
+</section>
+
+<footer>
+    © 2026 Gazze Yardım Derneği | Her Destek 1 Can Demek
+</footer>
+
+<script>
+document.querySelector(".btn").addEventListener("click", function(e){
+    console.log("Destek butonuna tıklandı.");
+});
+</script>
+
+</body>
+</html>
+```
